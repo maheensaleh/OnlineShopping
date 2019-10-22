@@ -1,0 +1,19 @@
+{%  extends "basic.html" %}
+
+{% block content%}
+{% load static %}
+<br>
+
+      <div class="carousel-item active">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Mobiles</h5>
+                            <img src='{% static "Mobile\images\Apple-iPhone-XI-1.jpg" %}' class="card-img-top" >
+                <h4>iPhone X1</h4><h6>Rs.158500</h6>
+                <a href="/mobile" class="btn btn-primary">More Mobiles </a>
+            </div>
+          </div>
+       </div>
+
+{% endblock content %}

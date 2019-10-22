@@ -1,0 +1,47 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>MyCart</h3></a>
+<form action="/payment" method="get">
+    <input type="hidden" name="extra" value="none" readonly>
+    <input type="submit" value="purchase">
+</form>
+  </div>
+</nav>
+
+<div class="row mr-5 ml-5">
+{% for x in data %}
+    {% for y in x%}
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{y.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{y.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{y.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{y.product_quantity}}" readonly>
+    <input name="remove" class="form-control" type="hidden" value="remove" readonly>
+    <input value="Remove it" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{y.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+    {% endfor %}
+<br>
+    {% endfor %}
+</div>
+<center>
+<form action="/" method="get">
+<input type="submit" value="continue shopping">
+</form>
+</center>
+
+<br>
+<br>
+<br>
+
+{% endblock%}

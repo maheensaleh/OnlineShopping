@@ -1,0 +1,21 @@
+{% extends "basic.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<style>
+    .content {
+    max-width: 100px;
+    margin: auto;
+}
+</style>
+<body>
+
+<div class="content" >
+    <br><br>
+    <h3>Welcome</h3>
+    <h3>{{ user.username }}</h3>
+    <br><br>
+</div>
+
+
+{% endblock content %}

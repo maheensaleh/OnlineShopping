@@ -1,0 +1,29 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>welcome to our website</h3></a>
+  </div>
+</nav>
+
+
+<div>
+<table class="table">
+    <tr>
+      <td align="center">name</td>
+      <td align="center">{{name}}</td>
+      <td align="center"></td>
+      <td align="center"></td>
+    </tr>
+    <tr>
+      <td align="center">email</td>
+      <td align="center">{{email}}</td>
+      <td align="center"></td>
+      <td align="center"></td>
+    </tr>
+</table>
+</div>
+
+{% endblock%}

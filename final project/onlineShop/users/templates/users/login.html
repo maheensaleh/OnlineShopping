@@ -1,0 +1,40 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Customer Login</h3></a>
+  </div>
+</nav>
+
+<style>
+    .content {
+    max-width: 500px;
+    margin: auto;
+}
+</style>
+ <div class="content">
+         <form method='POST'>
+             {% csrf_token %}
+             <fieldset class="border-dark">
+                 <legend class ='border-bottom mb-4'> Log In</legend>
+
+                 {{ form|crispy }}
+
+             </fieldset>
+             <div>
+                 <button class="btn btn-outline-info" type="submit"> log in </button>
+             </div>
+
+         </form>
+         <div class=" pt-3" >
+            <large class="text-muted">
+                Need an account?
+                <a href="/register/user_form"><font size="4">Sign Up</font></a>
+
+            </large>
+         </div>
+      </div>
+
+{% endblock%}

@@ -1,0 +1,37 @@
+{% extends "basic.html" %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Samsung</h3></a>
+  </div>
+</nav>
+
+{% for x in data %}
+<div class="row mr-5 ml-5">
+    {% for y in x%}
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{y.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{y.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{y.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{y.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{y.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+    {% endfor %}
+</div>
+<br>
+{% endfor %}
+
+<a href="/mobile"><font size="4">Back to mobiles</font></a>
+<br>
+<br>
+
+{% endblock%}
+

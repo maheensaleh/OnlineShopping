@@ -1,0 +1,47 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+
+        {% if chk is False%}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>
+            thankyou for your feedback
+    </h3></a>
+  </div>
+</nav>
+
+<br>
+<center>
+    <font size="5">thank you sir for your feedback. <b>"{{ feedback }}"</b> we will try to improve our self.</font>
+
+<form action="/" method="get">
+<br>
+
+
+    <input type="submit" value="go to home">
+</form>
+</center>
+
+        {% endif %}
+
+        {% if chk is True%}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>
+No feedback??????
+    </h3></a>
+  </div>
+</nav>
+<br><center>
+    <font size="5">{{feedback}}</font>
+</center><br>
+<center>
+<form action="/feedback" method="get">
+<input type="submit" value="give a feedback">
+</form>
+</center>
+        {% endif %}
+
+{% endblock%}

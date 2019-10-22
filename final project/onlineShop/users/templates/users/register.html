@@ -1,0 +1,49 @@
+{% extends "basic.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Register</h3></a>
+  </div>
+</nav>
+<style>
+    .content {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+</style>
+ <div class="content">
+         <form method='POST'>
+             {% csrf_token %}
+             <fieldset class="border-dark">
+                 <legend class ='border-bottom mb-4'> Join today </legend>
+                {% if error is True%}
+                      <h5>Your form was not acceptable due to certain errors in your entered data</h5>
+                 <ul>
+                        {% if ne is True %}<li>{{username_e}} </li> {% endif%}
+                        {% if pe is True %}  <li>{{password_e}}</li>  {% endif%}
+                        {% if ee is True %} <li>{{email_e}}</li>  {% endif%}
+                        {% if pl is True %} <li>{{pl_e}}</li>  {% endif%}
+                 </ul>
+
+                 {% endif %}
+
+                 {{ form|crispy }}
+
+             </fieldset>
+             <div>
+                 <button class="btn btn-outline-info" type="submit"> submit </button>
+             </div>
+         </form>
+
+
+
+         <div class=" pt-3" >
+             <large class="text-muted">
+                 have an acc? <a href="{% url 'login'%}"> login here </a>
+             </large>
+         </div>
+ </div>
+{% endblock%}

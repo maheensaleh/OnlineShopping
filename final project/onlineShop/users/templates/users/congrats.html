@@ -1,0 +1,22 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Congratulations!!!!</h3></a>
+  </div>
+</nav>
+
+<center>
+<form action="/feedback" method="get">
+    <br>
+    <h5>we are proud to have a customer like you. we thank you on trusting us. we assure you that you won't regret it.</h5>
+    <h5>the items you have purchased would be delivered to the entered address as soon as possible.</h5>
+    <br>
+    <input type="hidden" value="none" name="text" readonly>
+    <input type="submit" value="give a feedback">
+</form>
+</center>
+
+{% endblock%}

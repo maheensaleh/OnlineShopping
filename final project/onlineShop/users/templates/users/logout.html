@@ -1,0 +1,25 @@
+{% extends "basic.html" %}
+{% block content %}
+
+<style>
+    .content {
+    max-width: 100px;
+    margin: auto;
+}
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Logout</h3></a>
+  </div>
+</nav>
+<center>
+        <a href="/login"><h1>Login Again</h1></a>
+        <h3>or</h3>
+        <a href="/register/user_form"><h1>sign up</h1></a>
+
+</center>
+</body>
+
+{% endblock content%}

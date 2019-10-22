@@ -1,0 +1,35 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>do you want a free delivery??</h3></a>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<center>
+<form action="/congrats" method="get">
+    <h2>Enter your address</h2>
+    <input type="text" size="100" name="address">
+    <input type="submit" value="Submit">
+    <h5>note: enter the address where you want the purchased items to be delivered</h5>
+
+	<br>
+
+		<tr>
+		<td align="center" width="150">select the mode of payment &nbsp&nbsp</td>
+		<td align="center">
+		<select name="mode of payment">
+		<option value="pak">onsite payment</option>
+		<option value="iran">online payment</option>
+		</select>
+		</td>
+		</tr>
+
+</form>
+</center>
+
+{% endblock%}

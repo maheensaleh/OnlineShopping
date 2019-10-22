@@ -1,0 +1,22 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Give a feedback .........</h3></a>
+  </div>
+</nav>
+<center>
+    <br>
+    <br>
+    <br>
+        <h5>kindly enter your feedback and let us know about your experience with us.</h5>
+
+<form action="/feedback_view" method="get">
+    <input type="text" size="100" name="comment">
+    <input type="submit" value="submit">
+</form>
+</center>
+
+{% endblock%}

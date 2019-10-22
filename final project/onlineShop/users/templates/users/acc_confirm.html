@@ -1,0 +1,35 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Congratulations!!!! your account has been created</h3></a>
+  </div>
+</nav>
+
+<div>
+<table class="table">
+    <tr>
+      <td align="center"></td>
+      <td align="center"></td>
+      <td align="center"><h5>name</h5></td>
+        <td align="center"><h5>{{name}}</h5></td>
+    </tr>
+    <tr>
+      <td align="center"></td>
+      <td align="center"></td>
+        <td align="center"><h5>email</h5></td>
+        <td align="center"><h5>{{email}}</h5></td>
+    </tr>
+</table>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <marquee><a class="navbar-brand" href="#"><h3>note:
+please login with the same account by clicking on the login button at the top rigth corner of the screen</h7></a></marquee>
+  </div>
+</nav>
+
+{% endblock%}

@@ -1,0 +1,42 @@
+{% extends "basic.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+<style>
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>Delivery</h3></a>
+<form action="/delivery" method="get">
+    <input type="submit" value="Deliver">
+</form>
+  </div>
+</nav>
+
+<div>
+<table class="table">
+  <thead>
+    <tr>
+        <td align="center" ><font size="5"><b>products</b></font></font></td>
+        <td align="center" ><font size="5"><b>price</b></font></font></td>
+    </tr>
+  </thead>
+  <tbody>
+  {% for x in data %}
+  {%for y in x%}
+    <tr>
+      <td align="center">{{y.product_model}}</td>
+      <td align="center">{{y.product_price}}</td>
+    </tr>
+    {% endfor %}
+
+  {% endfor %}
+    <tr>
+        <td align="center"><font size="5"><b>Total</b></font></td>
+        <td align="center"><font size="5"><b>{{bill}}</b></font></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+{% endblock%}

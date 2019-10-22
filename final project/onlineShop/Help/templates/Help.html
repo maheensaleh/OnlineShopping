@@ -1,0 +1,32 @@
+{%  extends "basic.html" %}
+{% block content%}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h3>     Welcome to our help desk
+</h3></a>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <marquee><a class="navbar-brand" href="#"><h3>note: provide your user name and query below
+</h7></a></marquee>
+  </div>
+</nav>
+
+
+<center>
+    <br><br>
+<form action="/Help/Help_confrm" method="get">
+    <h3>user name&nbsp&nbsp<input type="text" name="username"></h3> <br><br>
+    <h3>message &nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="message"> </h3><br><br>
+    <input type="submit" value="submit">
+</form>
+</center>
+
+
+
+
+{% endblock content%}
+
+

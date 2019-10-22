@@ -1,0 +1,288 @@
+{%  extends "basic.html" %}
+{% block content%}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/mobile/Nokia"><h3>Nokia</h3></a>
+  </div>
+</nav>
+
+<div class="row mr-5 ml-5">
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{ndata.0.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{ndata.0.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{ndata.0.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{ndata.0.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{ndata.0.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<br>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{ndata.1.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{ndata.1.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{ndata.1.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{ndata.1.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{ndata.1.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{ndata.2.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{ndata.2.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{ndata.2.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{ndata.2.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{ndata.2.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{ndata.3.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{ndata.3.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{ndata.3.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{ndata.3.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{ndata.3.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{ndata.4.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{ndata.4.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{ndata.4.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{ndata.4.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{ndata.4.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{ndata.5.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{ndata.5.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{ndata.5.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{ndata.5.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{ndata.5.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/mobile/Apple"><h3>Apple</h3></a>
+  </div>
+</nav>
+<div class="row mr-5 ml-5">
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{adata.0.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{adata.0.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{adata.0.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{adata.0.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{adata.0.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<br>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{adata.1.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{adata.1.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{adata.1.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{adata.1.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{adata.1.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{adata.2.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{adata.2.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{adata.2.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{adata.2.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{adata.2.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{adata.3.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{adata.3.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{adata.3.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{adata.3.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{adata.3.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{adata.4.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{adata.4.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{adata.4.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{adata.4.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{adata.4.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{adata.5.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{adata.5.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{adata.5.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{adata.5.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{adata.5.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/mobile/Samsung"><h3>Samsung</h3></a>
+  </div>
+</nav>
+<div class="row mr-5 ml-5">
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{sdata.0.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{sdata.0.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{sdata.0.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{sdata.0.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{sdata.0.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<br>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{sdata.1.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{sdata.1.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{sdata.1.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{sdata.1.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{sdata.1.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{sdata.2.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{sdata.2.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{sdata.2.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{sdata.2.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{sdata.2.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{sdata.3.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{sdata.3.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{sdata.3.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{sdata.3.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{sdata.3.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{sdata.4.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{sdata.4.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{sdata.4.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{sdata.4.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{sdata.4.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+<div class="card mr-2 ml-2" style="width: 12rem;" >
+<form action="/cart" method="get">
+    <center><img src="/media/{{sdata.5.product_image}}" class="card-img-top" alt="...">
+    <input name="model" class="form-control" type="text" value="{{sdata.5.product_model}}" readonly>
+    <input name="price" class="form-control" type="text" value="{{sdata.5.product_price}}" readonly>
+    <input name="stock" class="form-control" type="hidden" value="{{sdata.5.product_quantity}}" readonly>
+    <input value="Add to cart" type="submit">
+    <button class="btn btn-info dropdown-toggle mb-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Details</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <pre>{{sdata.5.product_descr}}</pre>
+      </div>
+    </center>
+</form>
+</div>
+</div>
+
+
+</div><br><br>
+
+<br><br>
+{% endblock content%}
